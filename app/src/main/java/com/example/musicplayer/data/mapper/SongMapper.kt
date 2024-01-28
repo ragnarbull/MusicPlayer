@@ -8,7 +8,7 @@ fun SongDto.toSong() =
     Song(
         mediaId = mediaId,
         title = title,
-        subtitle = subtitle,
+        artist = artist,
         songUrl = songUrl,
         imageUrl = imageUrl
     )
@@ -17,7 +17,7 @@ fun MediaItem.toSong() =
     Song(
         mediaId = mediaId,
         title = mediaMetadata.title.toString(),
-        subtitle = mediaMetadata.subtitle.toString(),
+        artist = mediaMetadata.artist.toString(),
         songUrl = mediaId,
         imageUrl = mediaMetadata.artworkUri.toString()
     )

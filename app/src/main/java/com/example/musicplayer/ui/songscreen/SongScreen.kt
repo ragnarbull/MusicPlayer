@@ -246,7 +246,7 @@ fun SongScreenContent(
                             overflow = TextOverflow.Ellipsis
                         )
 
-                        Text(song.subtitle,
+                        Text(song.artist,
                             style = MaterialTheme.typography.subtitle1,
                             color = MaterialTheme.colors.onBackground,
                             maxLines = 1,

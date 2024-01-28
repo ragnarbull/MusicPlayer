@@ -84,7 +84,7 @@ fun MusicItem(
 
         CompositionLocalProvider(LocalContentAlpha provides ContentAlpha.medium) {
             Text(
-                text = song.subtitle,
+                text = song.artist,
                 maxLines = 2,
                 style = MaterialTheme.typography.subtitle2,
                 modifier = Modifier.constrainAs(songSubtitle) {

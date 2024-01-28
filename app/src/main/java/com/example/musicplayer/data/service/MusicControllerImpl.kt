@@ -76,8 +76,7 @@ class MusicControllerImpl(context: Context) : MusicController {
                 .setMediaMetadata(
                     MediaMetadata.Builder()
                         .setTitle(it.title)
-                        .setSubtitle(it.subtitle)
-                        .setArtist(it.subtitle)
+                        .setArtist(it.artist)
                         .setArtworkUri(Uri.parse(it.imageUrl))
                         .build()
                 )
